@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="#00DD8080"
+        android:shadowColor="#E91E63"
+        android:text="RECARGAS EL BOSQUE"
+        android:textColor="#F44336"
+        android:textColorHighlight="#2196F3"
+        android:textSize="24sp"
+        app:fontFamily="casual"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_width="352dp"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/btn_movi"
+                android:layout_width="171dp"
+                android:layout_height="154dp"
+                android:background="@android:color/background_light"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/movistar" />
+
+            <ImageButton
+                android:id="@+id/btn_cnt"
+                android:layout_width="203dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/background_light"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/cnt" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/btn_claro"
+                android:layout_width="205dp"
+                android:layout_height="match_parent"
+                android:background="#00FFFFFF"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/claro" />
+
+            <ImageButton
+                android:id="@+id/btn_tuenti"
+                android:layout_width="203dp"
+                android:layout_height="166dp"
+                android:background="@android:color/background_dark"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/tuenti" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/btn_dtv"
+                android:layout_width="197dp"
+                android:layout_height="170dp"
+                android:background="@android:color/background_light"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/directv" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </TableLayout>
+
+</LinearLayout>
